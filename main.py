@@ -29,9 +29,6 @@ d     = fig.canvas.get_width_height()
 # Action
 ########
 
-r,w = os.pipe()
-r = os.fdopen(r,'r')
-w = os.fdopen(w,'w')
 command = [ ffmpegPath,
             '-y', # (optional) overwrite output file if it exists
             '-f', 'rawvideo',
